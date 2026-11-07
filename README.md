@@ -1,65 +1,244 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🕌 KIAI Admin Dashboard Website
 
-## About Laravel
+### *The control center behind KIAI — manage kajian, ustadz, and community data from one powerful web dashboard.*
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![Laravel](https://img.shields.io/badge/Laravel-8.x-FF2D20?logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-7.3%20|%208.x-777BB4?logo=php&logoColor=white)
+![Sanctum](https://img.shields.io/badge/Auth-Laravel%20Sanctum-FF2D20)
+![Laravel Mix](https://img.shields.io/badge/Assets-Laravel%20Mix%206-F9645D)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📖 About
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**KIAI Admin Dashboard** is the web-based back office for the **KIAI** platform, which helps Muslims discover Islamic study sessions (*kajian*). Built on **Laravel**, it lets administrators manage the content and data that power the [KIAI Android app](https://github.com/Dziqy/KIAI-android-app).
+<!-- TODO: Confirm that this project also serves the REST API used by the Android app. -->
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 📸 Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<div align="center">
+    
+**KIAI Administrator Dashboard**
+    
+<img width="641" height="660" alt="image" src="https://github.com/user-attachments/assets/be627532-5019-42c8-a34c-ab401fc0c9b2" />
 
-### Premium Partners
+**Registration Page**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<img width="726" height="362" alt="image" src="https://github.com/user-attachments/assets/fc198876-afc9-4154-a6b0-2a8012ebb54a" />
 
-## Contributing
+**Managing Page**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<img width="638" height="479" alt="image" src="https://github.com/user-attachments/assets/5ff25113-9d2a-49d2-9729-dc26958c8d46" />
 
-## Code of Conduct
+**Display of asatidz submission by takmir**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<img width="636" height="465" alt="image" src="https://github.com/user-attachments/assets/f0545b3b-aee4-4755-91b3-233026afd6cc" />
 
-## Security Vulnerabilities
+**Content list page view**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<img width="686" height="1027" alt="image" src="https://github.com/user-attachments/assets/25484500-87f3-4c08-8550-8a5ea0edeac4" />
 
-## License
+</div>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# kiai
+
+**KIAI Admin Dashboard** provides several administrative modules to support the management of the KIAI platform.
+
+### 📊 Dashboard Overview
+
+| Feature | Description |
+|---|---|
+| 📈 **Platform Statistics** | Key figures for users, majelis, jamaah, and asatidz |
+| 🕌 **Kajian Monitoring** | Track kajian activity counts and spot sessions marked inactive or on holiday |
+| ⏳ **Registration Monitoring** | Keep an eye on pending user registrations |
+| 🧭 **Centralized Information** | All important platform information in a single dashboard |
+
+### 👥 User Management
+
+| Feature | Description |
+|---|---|
+| 📋 **User Directory** | View and manage registered platform users |
+| ✅ **Account Activation** | Activate user accounts |
+| ⛔ **Account Deactivation** | Deactivate user accounts |
+| 🛡️ **Role Management** | Assign administrator and majelis manager roles |
+| 🗂️ **User Administration** | Manage user information through dedicated pages |
+
+### 🏛️ Majelis Management
+
+| Feature | Description |
+|---|---|
+| 📋 **Majelis Directory** | View registered Islamic study centers |
+| 📝 **Registration Management** | Manage majelis registration information |
+| 🔄 **Account Status Management** | Activate or deactivate majelis accounts |
+| 🗂️ **Majelis Administration** | Maintain information associated with registered majelis |
+
+### 📚 Kajian Management
+
+| Feature | Description |
+|---|---|
+| ✏️ **Kajian Management** | Create, view, edit, and manage kajian records |
+| 🔖 **Kajian Status Management** | Update the attendance or activity status of kajian sessions |
+| 🌴 **Holiday Management** | Mark kajian activities as being on holiday |
+| 🗂️ **Kajian Administration** | Manage information about Islamic study activities |
+
+### 🎓 Asatidz Management
+
+| Feature | Description |
+|---|---|
+| 📋 **Asatidz Directory** | Manage Islamic teacher information |
+| 🗂️ **Asatidz Administration** | Dedicated management tools for registered teachers |
+| 🔁 **Application Workflow** | Support the handling of submitted asatidz-related information |
+
+### 📨 Registration & Application Management
+
+| Feature | Description |
+|---|---|
+| 🔎 **Registration Review** | Review newly submitted user registrations |
+| ✅ **Registration Approval** | Activate accounts for approved registrations |
+| 📄 **Application Review** | Review applications submitted through the platform |
+| ⚖️ **Application Decisions** | Accept or reject submitted applications |
+
+### 🔐 Authentication & Profile Management
+
+| Feature | Description |
+|---|---|
+| 🔑 **User Authentication** | Login and registration functionality |
+| 🪪 **Session Management** | Authenticated access to dashboard features |
+| 👤 **Profile Management** | View and update profile information |
+| 🚧 **Access Control** | Selected dashboard routes protected by authentication middleware |
+
+---
+
+## 🛠️ Tech Stack / Built With
+
+| Category | Technology |
+|---|---|
+| **Language** | PHP `^7.3 \| ^8.0`, JavaScript |
+| **Framework** | [Laravel](https://laravel.com/) `^8.75` |
+| **Authentication** | [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) `^2.11` |
+| **HTTP Client** | [Guzzle](https://docs.guzzlephp.org/) `^7.0.1` |
+| **CORS** | [fruitcake/laravel-cors](https://github.com/fruitcake/laravel-cors) `^2.0` |
+| **Region Data** | [azishapidin/indoregion](https://github.com/azharidin/indoregion) `^3.0` |
+| **Asset Bundling** | [Laravel Mix](https://laravel-mix.com/) `^6.0` (Webpack) |
+| **Frontend Utilities** | Axios, Lodash, PostCSS |
+| **Testing** | PHPUnit `^9.5`, Mockery, Faker |
+| **Dev Tools** | Laravel Tinker, Laravel Sail, Ignition |
+| **Package Managers** | Composer, npm |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **PHP** 7.3+ (8.0 or 8.1 recommended) with extensions: `mbstring`, `openssl`, `pdo`, `tokenizer`, `xml`, `ctype`, `json`, `bcmath`
+- **[Composer](https://getcomposer.org/)** 2.x
+- **[Node.js](https://nodejs.org/)** 14–16 LTS and **npm** (Laravel Mix 6 is built for these versions)
+- **A database**, e.g. MySQL 5.7+/MariaDB (check `.env.example` for the default driver)
+- **Git**
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/Dziqy/KIAI-admin-dashboard-web.git
+cd KIAI-admin-dashboard-web
+```
+
+**2. Install PHP dependencies**
+
+```bash
+composer install
+```
+
+**3. Install JavaScript dependencies**
+
+```bash
+npm install
+```
+
+**4. Configure the environment**
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Open `.env` and set your database credentials:
+
+```env
+APP_NAME=KIAI
+APP_URL=http://localhost:8000
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=kiai
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+**5. Create the database and run migrations**
+
+```bash
+# Create an empty database named "kiai" first, then:
+php artisan migrate
+
+# Optional: seed sample data (if seeders exist)
+php artisan db:seed
+```
+
+> 🇮🇩 The `indoregion` package ships its own migrations and seeders for Indonesian regions. See its documentation if you need to publish and seed them.
+
+**6. Link the storage folder** *(for uploaded images/files)*
+
+```bash
+php artisan storage:link
+```
+
+**7. Build the frontend assets**
+
+```bash
+npm run dev
+```
+
+### Running Locally
+
+Start the development server:
+
+```bash
+php artisan serve
+```
+
+Then open **http://localhost:8000** in your browser.
+
+For live asset rebuilding while you work, run this in a second terminal:
+
+```bash
+npm run watch
+```
+
+<details>
+<summary><b>🐳 Run with Laravel Sail (Docker)</b></summary>
+
+```bash
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan migrate
+```
+
+</details>
+
+### Running Tests
+
+```bash
+php artisan test
+# or
+./vendor/bin/phpunit
+```
